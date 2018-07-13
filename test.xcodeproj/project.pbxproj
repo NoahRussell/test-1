@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B4C758D20F509E80076281C /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C758C20F509E80076281C /* Film.swift */; };
+		2B6786E720F8EDCF00CCD05B /* FilmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6786E620F8EDCF00CCD05B /* FilmTableViewController.swift */; };
 		2BAB04D020F3A78C006183F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB04CF20F3A78C006183F8 /* AppDelegate.swift */; };
 		2BAB04D220F3A78C006183F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB04D120F3A78C006183F8 /* ViewController.swift */; };
 		2BAB04D520F3A78C006183F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BAB04D320F3A78C006183F8 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2B4C758C20F509E80076281C /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		2B6786E620F8EDCF00CCD05B /* FilmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewController.swift; sourceTree = "<group>"; };
 		2BAB04CC20F3A78C006183F8 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAB04CF20F3A78C006183F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BAB04D120F3A78C006183F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				2BAB04D820F3A78C006183F8 /* LaunchScreen.storyboard */,
 				2BAB04DB20F3A78C006183F8 /* Info.plist */,
 				2B4C758C20F509E80076281C /* Film.swift */,
+				2B6786E620F8EDCF00CCD05B /* FilmTableViewController.swift */,
 				2BF541F320F766BF00588858 /* FilmTableViewCell.swift */,
 			);
 			path = test;
@@ -266,6 +269,7 @@
 				2B4C758D20F509E80076281C /* Film.swift in Sources */,
 				2BAB04D020F3A78C006183F8 /* AppDelegate.swift in Sources */,
 				2BF541F420F766BF00588858 /* FilmTableViewCell.swift in Sources */,
+				2B6786E720F8EDCF00CCD05B /* FilmTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

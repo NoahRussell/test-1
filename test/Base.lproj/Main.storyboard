@@ -53,8 +53,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="RatingLabel" destination="JVr-dv-xSW" id="GE9-el-0B6"/>
                                     <outlet property="nameLabel" destination="8fI-4U-sZB" id="jfb-VI-zVg"/>
                                     <outlet property="photoLogo" destination="d6e-Vb-Uaf" id="9Dl-Us-LrU"/>
+                                    <outlet property="ratingLabel" destination="JVr-dv-xSW" id="Eh0-HC-I50"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

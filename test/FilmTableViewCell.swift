@@ -11,8 +11,10 @@ import UIKit
 class FilmTableViewCell: UITableViewCell {
     //MARK: Properties
     
-     @IBOutlet weak var nameLabel: UILabel!
-     @IBOutlet weak var photoLogo: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var photoLogo: UIImageView!
+    @IBOutlet weak var RatingLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
