@@ -15,9 +15,18 @@ class Film {
     var genre: String = ""
     var rating: Int = 0
     //MARK: Initialization
-    init?(name: String, photo: UIImage, director: String, genre: String, rating: Int) {
+    init?(name: String, photo: UIImage?, director: String, genre: String, rating: Int) {
         //fail initialization if certain fields are empty
-        if name.isEmpty || director.isEmpty || genre.isEmpty || rating < 0{
+        if name.isEmpty || director.isEmpty || genre.isEmpty{
+            return nil
+        }
+        // The name must not be empty
+        guard !name.isEmpty || !director.isEmpty || !genre.isEmpty else {
+            return nil
+        }
+        
+        // The rating must be between 0 and 5 inclusively
+        guard (rating >= 0) && (rating <= 5) else {
             return nil
         }
         self.name = name

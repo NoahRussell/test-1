@@ -11,10 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mealNameLabel: UILabel!
+    @IBOutlet weak var filmNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var FilmRating: UILabel!
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //adding toolbar
         let toolbar:UIToolbar = UIToolbar(frame: CGRect(x:0,y:0,width:self.view.frame.size.width, height:30))
         let flexSpace = UIBarButtonItem(barButtonSystemItem:.flexibleSpace, target: nil, action: nil)
@@ -42,7 +47,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        mealNameLabel.text = textField.text
+        filmNameLabel.text = textField.text
     }
     
     //MARK: UIImagePickerControlDelegate
@@ -74,11 +79,41 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         present(imagePickerController, animated: true, completion: nil)
     }
     
+    @IBOutlet weak var dynamicRating: ViewController!
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Default Text"
+        filmNameLabel.text = "Default Text"
     }
     @IBAction func doneButtonAction() {
         self.view.endEditing(true)
     }
-}
+
+    var dynamicRatingInt: Int = 0
+    var dynamicRatingString: String = ""
+
+        @IBAction func minusStarRating(_ sender: UIButton) {
+
+            
+            if dynamicRatingInt >= 1 {
+            dynamicRatingInt = dynamicRatingInt - 1
+                FilmRating.text = ""
+                for n in 0...dynamicRatingInt{
+                    FilmRating.text = FilmRating.text! + "*"
+                }
+            }else{
+                FilmRating.text = "*"
+            }
+        }
+        @IBAction func addStarRating(_ sender: UIButton) {
+            if dynamicRatingInt < 4{
+                dynamicRatingInt = dynamicRatingInt + 1
+                    FilmRating.text = FilmRating.text! + "*"
+
+            }else{
+                FilmRating.text = "*****"
+            }
+        }
+        
+        
+        
+    }
 
